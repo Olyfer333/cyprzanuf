@@ -16,6 +16,8 @@ span {
     color: #f00;
 	}
 </style>
+</head>
+<body>
 <hr>
 <h1> JEDNOSTKA CENTRALNA </h1>
 <hr>
@@ -70,11 +72,55 @@ span {
 	<li>ilość pamięci Cache L1 i L2, </li>
 	<li>zestaw dostępnych rozkazów (oprócz standardowych dodatkowo MMX, SSE, 3D-NOW), </li>
 	<li>rodzaj zastosowanej obudowy i wyprowadzeń. </li>
+</ul>
 	<br>
-
+<ul>Najważniejsze elementy procesora:</ul>
+	<li>CPU - Central Procesor Unit (całość), </li>
+	<li>ALU - Arithmetic Logic Unit (główna jednostka wykonawcza, moduł arytmetyczno-logiczny), </li>
+	<li>FPU - Floating Point Unit (jednostka zmiennoprzecinkowa, koprocesor arytmetyczny); </li>
+	<li>SIMD - Single Instruction Multiple Data (wykonywanie tej samej instrukcji na wielu danych jednocześnie), </li>
+	<li>Cache L1, L2 - szybka pamięć wewnętrzna. </li>
+<hr>
+<h2>Pamięć wewnętrzna</h2>
+<p>RAM - pamięć operacyjna (robocza) komputera.</p>
+<br>
+	<ul>Rodzaje najczęściej stosowanej pamięci RAM: </ul>
+<br>
+	<li>SRAM - statyczna pamięć RAM (nie wymaga odświeżania); pamięć bardzo szybka, ale również bardzo kosztowna; stosowana na pamięć Cache; </li>
+	<li>DRAM - dynamiczna pamięć RAM (co pewien czas trzeba w niej odświeżać informacje) - moduły FPM i SIMM; </li>
+	<li>SDRAM - pamięć DRAM wyposażona w interfejs synchroniczny; dzięki temu wewnętrzne sygnały taktujące generowane są na podstawie zegara systemowego (moduły DIMM); </li>
+	<li>DDR SDRAM - (Double Data Rate SDRAM) - sygnał przesyłany jest na obydwu zboczach sygnału zegarowego, co podwaja prędkość działania tych pamięci; </li>
+	<li>RDRAM (Rambus Direct RAM) - bardzo szybka pamięć RAM. </li>
+<p>ROM – Pamięć stała, tylko do odczytywania</p>
+<hr>
+	<p>Informacja jest przechowywana stale nie ulega zniszczeniu ani zmianie. Pojemność tej pamięci jest zazwyczaj ograniczona. Przechowuje się w niej informacje o systemie operacyjnym niezbędne do podjęcia pracy po wyłączeniu zasilania. Pamięć ROM nie może być modyfikowana, można z niej tylko odczytywać dane. Z tego też względu służą do przechowywania kluczowych informacji jak np. konfiguracja BIOS'u czy modemu. </p>
+	
 
 <p> <a href="budowakomputera.html">Powrót  </a> </p>
-</head>
-<body>
 </body>
 </html>
+<hr>
+<h2>Pamięć zewnętrzna (pamięć masowa)</h2>
+<br>
+<p>Służy do przechowywania dużych ilości danych;</p>
+<br>
+<ul>Przykłady:</ul>
+<li>stacje dyskietek (FDD - Flopy Disc Drive) - służy do zapisu i odczytu dysków elastycznych o odpowiedniej pojemności (360 kB; 720 kB; 1,2 MB; 1,44 MB);</li>
+<li>dyski twarde (HDD - Hard Disc Drive) - urządzenie służące do zapisu i odczytu gromadzonych informacji; pojemność mierzy się odpowiednio w MG i GB; dyski twarde są podstawowym nośnikiem danych w komputerze; umieszczone są zwykle na stałe w obudowie komputera; składają się z kilku lub kilkunastu płaskich, okrągłych dysków, których powierzchnie służą do przechowywania informacji.</li>
+<li>napęd CD-ROM - napęd służący tylko do odczytu dysków CD, CD-R, CD-RW, CD-Audio itd.; pojemność standardowej płyty CD wynosi 650 MB (dziś 700 MB); </li>
+<li>napęd DVD-ROM - napęd służący tylko do odczytu dysków DVD-ROM, możliwe jest na nim również odtwarzanie płyt CD.</li>
+</ul>
+<br>
+<hr>
+<br>
+<h2>Karty rozszerzeń</h2>
+<p>Karty umożliwiające rozszerzenie podstawowych funkcji komputera o kolejne, wzbogacające jego działanie.</p>
+<ul>Przykłady:</ul>
+<li>karta grafiki - karta rozszerzeń, umiejscawiana na płycie głównej poprzez gniazdo AGP (coraz rzadziej PCI, wyłącznie w bardzo starych modelach ISA); odpowiada w komputerze za obraz wyświetlany przez monitor; karty graficzne różnią się między sobą szybkością pracy, wielkością pamięci RAM, wyświetlaną rozdzielczością obrazu, liczbą dostępnych kolorów oraz częstotliwością odświeżania obrazu; karta graficzna składa się z czterech podstawowych elementów: płytki drukowanej, głównego procesora, pamięci wideo i układu RAMDAC (który często jest zintegrowany z procesorem w jednej obudowie); </li>
+<li>karta dźwiękowa - umożliwia odważanie dźwięków przez komputer; </li>
+<li>modem - pozwala na dołączenie komputera z siecią Internet poprzez stacjonarną linię telefoniczną; </li>
+<li>karta sieciowa - umożliwia połączenie komputera z innym komputerem lub z siecią komputerową.</li>
+<hr>
+<h2>Obudowa komputera</h2>
+<p>Jest jak gdyby skóra komputera. W jej wnętrzu umieszczana jest jednostka centralna wraz z kartami rozszerzeń. Rodzaj obudowy może zadecydować o rodzaju płyty głównej umieszczonej wewnątrz niej, a co za tym idzie również o innych parametrach komputera (rodzaj procesora, ilość pamięci czy kart rozszerzeń). Rozmieszczenie elementów na płycie głównej jest standaryzowane (np. ATX).</p>
+<img src="obudowy.png" alt="Rodzaje obudów komputera">
