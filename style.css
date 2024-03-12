@@ -24,7 +24,7 @@ a {
   cursor: pointer;
 }
 
-  background-color: #fff;
+  background-color: ##FFFF00;
   color: #007bff;
   border: 1px solid #007bff;
   padding: 10px 20px;
@@ -33,13 +33,13 @@ a {
 }
 
 #header {
-  background-color: #333;
+  background-color: #FFFF00;
   color: #000000;
   padding: 20px;
 }
 
 #footer {
-  background-color: #333;
+  background-color: #FFFF00;
   color: #000000;
   padding: 20px;
 }
