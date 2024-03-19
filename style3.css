@@ -47,7 +47,8 @@ background-image: linear-gradient(45deg, rgba(253, 0, 255, 1) 0%, rgba(0, 0, 0, 
 .left {
 	width: 135px;
 	float: left;
-	background: #A020F0;
+	background: #7d007d;
+	color: white;
 	min-height: 495px;
 	
 }
