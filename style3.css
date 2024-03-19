@@ -39,7 +39,7 @@ background-image: linear-gradient(45deg, rgba(244, 255, 0, 1) 0%, rgba(0, 0, 0, 
 }
 
 .nav-text-format:hover{
-	background-color: hsl(135, 88%, 61%);
+	background-color: #FFFF00;
 	color: white;
 	cursor: pointer;
 }
@@ -106,7 +106,7 @@ a:active{
 
 .format-menu-aside:hover
 {
-	background-color: hsl(135, 88%, 61%);
+	background-color: #FFFF00;
 	color: white;
 	cursor: pointer;
 }
