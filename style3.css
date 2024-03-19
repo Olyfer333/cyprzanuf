@@ -11,7 +11,7 @@ background-image: linear-gradient(45deg, rgba(253, 0, 255, 1) 0%, rgba(0, 0, 0, 
 
 .header {
 	height: 150px;
-	background: #FFFF00;
+	background: #ff00ff;
 }
 
 .header-format-text {
@@ -24,7 +24,7 @@ background-image: linear-gradient(45deg, rgba(253, 0, 255, 1) 0%, rgba(0, 0, 0, 
 
 .nav {
 	height: 50px;
-	background-color: #FFFF00;
+	background-color: #ff00ff;
 	clear: both;
 }
 
@@ -34,12 +34,12 @@ background-image: linear-gradient(45deg, rgba(253, 0, 255, 1) 0%, rgba(0, 0, 0, 
 	height: 25px;
 	font-size: 18px;
 	padding: 10px;
-	border-right: 2px dotted #FFFF00;
+	border-right: 2px dotted #ff00ff;
 	opacity: 0.8;
 }
 
 .nav-text-format:hover{
-	background-color: #FFFF00;
+	background-color: #ff00ff;
 	color: black;
 	cursor: pointer;
 }
@@ -55,7 +55,7 @@ background-image: linear-gradient(45deg, rgba(253, 0, 255, 1) 0%, rgba(0, 0, 0, 
 .main {
 	width: 480px;
 	float: left;
-	background: #FFFF00;
+	background: #ff00ff;
 }
 
 .right{
@@ -69,7 +69,7 @@ background-image: linear-gradient(45deg, rgba(253, 0, 255, 1) 0%, rgba(0, 0, 0, 
 
 .footer {
 	clear: both;
-	background: #FFFF00;
+	background: #ff00ff;
 }
 
 
@@ -101,12 +101,12 @@ a:active{
 	font-size:18px;
 	height:15px;
 	padding: 10px;
-	border-bottom: 2px dotted #FFFF00;
+	border-bottom: 2px dotted #ff00ff;
 }
 
 .format-menu-aside:hover
 {
-	background-color: #FFFF00;
+	background-color: #ff00ff;
 	color: white;
 	cursor: pointer;
 }
