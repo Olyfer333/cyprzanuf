@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oliver Sylwester</title>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    canvas {
+        display: block;
+        margin: auto;
+        background-color: #f0f0f0;
+    }
+</style>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+
+<script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const circles = [];
+
+    function Circle(x, y, radius, color, shadowColor) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.color = color;
+        this.shadowColor = shadowColor;
+        this.draw = function () {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+            ctx.fillStyle = this.color;
+            ctx.shadowColor = this.shadowColor;
+            ctx.shadowBlur = 10;
+            ctx.fill();
+            ctx.closePath();
+        };
+    }
+
+    function createCircle() {
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * canvas.height;
+        const radius = 30;
+        const color = '#0095DD';
+        const shadowColor = 'rgba(0, 0, 0, 0.3)';
+        const circle = new Circle(x, y, radius, color, shadowColor);
+        circles.push(circle);
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        circles.forEach(circle => {
+            circle.draw();
+            circle.x += (Math.random() - 0.5) * 2;
+            circle.y += (Math.random() - 0.5) * 2;
+        });
+    }
+
+    setInterval(createCircle, 1000);
+    animate();
+</script>
+</body>
+</html>
