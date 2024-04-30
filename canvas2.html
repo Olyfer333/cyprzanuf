@@ -38,37 +38,3 @@
     const blackHole = {
         x: canvas.width / 2,
         y: canvas.height / 2,
-        radius: 50,
-        color: '#000000'
-    };
-
-    function drawBall() {
-        ctx.beginPath();
-        ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
-        ctx.fillStyle = ball.color;
-        ctx.fill();
-        ctx.closePath();
-    }
-
-    function drawBlackHole() {
-        ctx.beginPath();
-        ctx.arc(blackHole.x, blackHole.y, blackHole.radius, 0, Math.PI * 2);
-        ctx.fillStyle = blackHole.color;
-        ctx.fill();
-        ctx.closePath();
-    }
-
-    function update() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        drawBall();
-        drawBlackHole();
-
-        // Sprawdzenie, czy kulka trafiła w "czarną dziurę"
-        const distance = Math.sqrt((blackHole.x - ball.x) ** 2 + (blackHole.y - ball.y) ** 2);
-        if (distance < blackHole.radius + ball.radius) {
-            // Kulka wpada do "czarnej dziury"
-            ball.x = canvas.width / 2;
-            ball.y = canvas.height / 2;
-            ball.velocityX = 3;
-            ball.velocityY = -
